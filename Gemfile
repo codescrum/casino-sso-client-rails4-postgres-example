@@ -35,8 +35,11 @@ gem 'cancancan', '~> 1.10.1'
 gem 'secure_headers'
 gem 'autoprefixer-rails'
 
-# Comment/Uncomment depending on what database your going to use
-#gem 'mysql2'
+# Use redis to store Rails Sessions
+gem 'redis-rails'
+# For CAS authentication with SSO example server
+gem 'devise_cas_authenticatable', git: 'https://github.com/jpamaya/devise_cas_authenticatable'
+# Use PostgreSQL
 gem 'pg'
 
 group :development do
