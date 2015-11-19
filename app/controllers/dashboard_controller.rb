@@ -1,7 +1,7 @@
-# Controller associated with dashborad space, remember that this has its own
-# layout
 class DashboardController < ApplicationController
-  # Main page for dashboard
+
+  before_filter :authenticate_user!
+
   def index
   end
 end
