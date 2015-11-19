@@ -52,10 +52,6 @@ require File.expand_path(File.join('..', '..', 'lib', 'sassish', 'sassish.rb'), 
 #   postgresql_example_path = File.join(config_root, 'database.yml.example_postgresql')
 #   postgresql_real_path = File.join(config_root, 'database.yml')
 #   `cp #{postgresql_example_path} #{postgresql_real_path}`
-#   # # MySQL Config File
-#   # mysql_example_path = File.join(config_root, 'database.yml.example_mysql')
-#   # mysql_real_path = File.join(config_root, 'database.yml')
-#   # `cp #{mysql_example_path} #{mysql_real_path}`
 #   # Secrets File
 #   secrets_example_path = File.join(config_root, 'secrets.yml.example')
 #   secrets_real_path = File.join(config_root, 'secrets.yml')
