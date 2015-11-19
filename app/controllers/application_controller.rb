@@ -1,9 +1,8 @@
+# Base controller for all apps controllers
 class ApplicationController < ActionController::Base
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
   # Skip AuthenticityToken to bypass problem with Devise >= 3.3.0
   protect_from_forgery with: :null_session
-
+  ensure_security_headers
   # Add filter to bypass flash message problem in Rails 4 (https://github.com/nbudin/devise_cas_authenticatable/issues/81)
   before_filter :redirect_to_sign_in, unless: :user_signed_in?
 
